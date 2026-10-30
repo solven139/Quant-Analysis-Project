@@ -5,6 +5,7 @@ Follow the steps below(we need not to use all the files:
 Step 0: breadth data (one-time, shared by both universes)
 
 1.wrds_breadth_pull.py pulls S&P 500 membership and constituent prices from WRDS.
+
 2.breadth_data_prep.py builds sp500_breadth_pct_above_200dma.csv.
 
 14-asset universe
@@ -15,6 +16,7 @@ Step 0: breadth data (one-time, shared by both universes)
 6. condedge_metalabel.py is Step 7 (meta-labeling). It reads the labeled bets and breadth series and writes the rank, fold-result and importance CSVs.
 
 10-sector universe
+
 7. condedge_sector_universe_run.py runs Steps 2, 4 and 5 in one script for the sectors (N=120). It writes condedge_trades_labeled_6cond_10sectors.csv and the MCPT and DSR outputs.
 8. condedge_metalabel_sector_universe_run.py is Step 7 for the sectors. It needs the labeled file from step 7.
 
