@@ -8,6 +8,7 @@ Step 0: breadth data (one-time, shared by both universes)
 2.breadth_data_prep.py builds sp500_breadth_pct_above_200dma.csv.
 
 14-asset universe
+
 3. condition_features.py is Step 2. It labels all 1,309 trades with the six conditions and writes condedge_trades_labeled_6cond_14assets.csv.
 4. condedge_pricepath_mcpt.py is Step 4 (MCPT, N=168). It writes condedge_pricepath_mcpt_results_14assets.csv.
 5. condedge_dsr.py is Step 5 (DSR). It reads the labeled bets from step 3, the MCPT results from step 4 and the price panel. It prints the survivor verdict.
